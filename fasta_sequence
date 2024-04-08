@@ -1,0 +1,12 @@
+#!/bin/bash
+
+for i in *.fasta
+
+do
+
+a=`grep -v ">" $i|tr -d '\n'|wc -c`
+
+done
+
+echo $a
+
