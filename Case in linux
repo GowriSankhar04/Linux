@@ -1,0 +1,27 @@
+#!/bin/bash
+#echo "enter x,y and z cordinates"
+#read x y z
+#echo "$x,$y,$z"
+#awk '{$5= sqrt(($x-$2)^2 + ($y-$3)^2 + ($z-$4)^2);print($0)}' ri.sh|sort -k5,5n|head -n 1
+
+read a
+
+read b
+
+echo "Enter choice \n 1.add \n 2.sub"
+
+read ch
+
+case $ch in
+
+1) res=`echo $a+$b|bc`
+
+;;
+
+2) res=`echo $a-$b|bc`
+
+;;
+
+esac
+
+echo "result : $res"
