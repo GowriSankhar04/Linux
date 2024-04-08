@@ -1,0 +1,14 @@
+csplit -s -z DOC-20231019-WA0000.pdb /^"MODEL"/ '{*}'
+
+rm xx00
+
+mmv xx\* 1E8L_\
+
+
+for i in 1E8L_*
+
+do
+
+ mv "$i" "$i.pdb"
+
+done
