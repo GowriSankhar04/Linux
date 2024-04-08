@@ -1,0 +1,13 @@
+Gene1 10 100
+
+Gene2 10 1000
+
+Gene3 10 10000
+
+awk '{for(i=0;i < NR;i++){val=0;val=log($3/$2)/log(10);print val}}' file.txt|sort|uniq
+
+OP:
+1
+2
+3
+
